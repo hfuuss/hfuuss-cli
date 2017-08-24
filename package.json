@@ -1,6 +1,6 @@
 {
-  "name": "hfuuss-cli",
-  "version": "1.0.0",
+  "name": "hfuuss",
+  "version": "1.0.1",
   "description": "myCli",
   "main": "index.js",
   "scripts": {

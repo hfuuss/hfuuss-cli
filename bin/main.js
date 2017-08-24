@@ -48,6 +48,7 @@ function prefix(type) {
 cmd
     .version(appInfo.version)
     .option('-i, --index <n>', 'ascii art index, default is random', -1, parseInt)
+    // .option('-v, --version <n>', 'ascii art index, default is random', -1, parseInt)
     .option('-t, --type <value>', '[quotes|jokes|tang|song]', 'quotes', /^(quotes|jokes|tang|song)$/i)
     .on('--help', function(){
         console.log('\t' + appInfo.repository.url);
