@@ -16,7 +16,7 @@
     "diary"
   ],
   "bin": {
-    "sblog": "bin/main.js"
+    "hfuuss": "bin/hfuuss.js"
   },
   "author": "hfuuss <ss@hfuusec.cn> (http://i.getshell.cn)",
   "license": "MIT",

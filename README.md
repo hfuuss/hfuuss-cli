@@ -1,19 +1,36 @@
 # 说明
-根据日期写日记或者总结每天学的事情，可以是流水账，可以是其他乱七八糟的东西，但是一定要根据时间（TIME），然后模仿hexo的目录结构（要比他简单的多很多）。
+为了练习[commander](https://github.com/tj/commander.js)模块，进行的小项目。
+# 功能
+可以生成 [谚语|段子|唐诗|宋词]和动物图形。
+# example:
 
-# 使用方法 
-* `npm install hfuuss  -g`    
-* `hfuuss new //生成今天的文章，md格式`     
-* `hfuuss g //生成gitpage支持的格式`   
-* `hfuuss d //部署到gitpage上面。`  
-*  。。。
+$ hfuuss  #不加参数默认会随机出现一只动物和一句谚语
+![](http://images.hfuusec.cn/18-4-24/72622667.jpg)
+$ hfuuss -i 10 -t jokes # -i 指定某个动物   -t 指定内容类型
+![](http://images.hfuusec.cn/18-4-24/30851368.jpg)
+$ hfuuss ls #显示所有动物 和序号
+![](http://images.hfuusec.cn/18-4-24/93656420.jpg)
 
-markdown插件   
-cli机械  
-调用git  
-读取git配置文件，或者调用系统命令
-# 运行项目方法
-1、 `git clone git@github.com:hfuuss/hfuuss-cli.git`   
-2、 `cd hfuuss-cli`   
-3、 `npm install . -g` #安装到全局   
-4、 `hfuuss -h`
+# 如何使用
+1、npm install hfuuss -g   
+2、hfuuss
+
+Usage: main [options]
+
+
+  Options:
+
+    -V, --version       output the version number
+    -i, --index <n>     ascii art index, default is random
+    -t, --type <value>  [quotes|jokes|tang|song]
+    -h, --help          output usage information
+
+# --type
+ [quotes|jokes|tang|song] 分别代表 [谚语|段子|唐诗|宋词]
+
+
+# 如何开发调试
+1、git clone git@github.com:hfuuss/hfuuss-cli.git     
+2、cd hfuuss-cli && npm install    
+3、npm link     
+4、hfuuss
